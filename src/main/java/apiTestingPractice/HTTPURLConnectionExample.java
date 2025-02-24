@@ -1,6 +1,9 @@
 package apiTestingPractice;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URI;
@@ -22,6 +25,20 @@ public class HTTPURLConnectionExample {
 			
 			String Responsemesssage= connection.getResponseMessage();
 			System.out.println("Response Message is "+Responsemesssage);
+			
+			InputStream inputstream =connection.getInputStream();
+			InputStreamReader inputStreamReader=  new InputStreamReader(inputstream);
+			
+			BufferedReader bufferedReader= new BufferedReader(inputStreamReader);
+			
+			//bufferedReader.readLine();
+			String line;
+			StringBuffer buffer= new StringBuffer();
+			while ((line = bufferedReader.readLine())!= null) {
+				buffer.append(line);
+			}
+			
+			System.out.println(buffer);
 			
 			
 		} catch (IOException e) {
