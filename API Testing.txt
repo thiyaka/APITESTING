@@ -1,0 +1,6 @@
+API Testing:
+
+http://dummy.restapiexample.com/
+https://learning.postman.com/docs/tests-and-scripts/write-scripts/test-examples/
+https://reqres.in/T
+
