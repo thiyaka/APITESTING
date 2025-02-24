@@ -20,6 +20,8 @@ public class HTTPURLConnectionExample {
 			int Responsecode = connection.getResponseCode();
 			System.out.println("Response code is "+Responsecode);
 			
+			String Responsemesssage= connection.getResponseMessage();
+			System.out.println("Response Message is "+Responsemesssage);
 			
 			
 		} catch (IOException e) {
