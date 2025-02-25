@@ -102,7 +102,7 @@ public class HTTPURLConnectionExample {
 	public void putmethodExample() {
 		
 		try {
-			URL url= new  URL("https://dummy.restapiexample.com/api/v1/create");
+			URL url= new  URL("https://dummy.restapiexample.com/api/v1/update/21/");
 			
 			HttpURLConnection connection=  (HttpURLConnection) url.openConnection();
 			connection.setRequestMethod("PUT");
@@ -151,7 +151,7 @@ public class HTTPURLConnectionExample {
 	public void deletemethodExample() {
 		
 		try {
-			URL url= new  URL("https://dummy.restapiexample.com/api/v1/create");
+			URL url= new  URL("https://dummy.restapiexample.com/api/v1/delete/2/");
 			
 			HttpURLConnection connection=  (HttpURLConnection) url.openConnection();
 			connection.setRequestMethod("DELETE");
